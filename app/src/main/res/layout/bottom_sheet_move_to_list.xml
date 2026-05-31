@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:paddingBottom="24dp">
+
+    <!-- Uchwyt -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="#555555"/>
+
+    <!-- Tytuł -->
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2A2A2A"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Przenieś do listy:"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Do obejrzenia -->
+    <LinearLayout
+        android:id="@+id/btnMoveWatchlist"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_watchlist"
+            android:tint="#AAAAAA"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do obejrzenia"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/checkWatchlist"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_watched"
+            android:tint="#E50914"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Obejrzane -->
+    <LinearLayout
+        android:id="@+id/btnMoveWatched"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_watched"
+            android:tint="#AAAAAA"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obejrzane"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/checkWatched"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_watched"
+            android:tint="#E50914"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Ulubione -->
+    <LinearLayout
+        android:id="@+id/btnMoveFavourite"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_favourite"
+            android:tint="#AAAAAA"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulubione"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/checkFavourite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_watched"
+            android:tint="#E50914"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

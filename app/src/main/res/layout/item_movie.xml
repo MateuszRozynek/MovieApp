@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="#1E1E1E"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Plakat -->
+        <ImageView
+            android:id="@+id/posterImage"
+            android:layout_width="75dp"
+            android:layout_height="112dp"
+            android:scaleType="centerCrop"
+            android:background="#2C2C2C"/>
+
+        <!-- Info o filmie -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/genresText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E50914"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+            <!-- Ocena z ikonką gwiazdki -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginEnd="4dp"/>
+
+                <TextView
+                    android:id="@+id/ratingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFD700"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Ikonki zapisywania – pionowo po prawej -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnWatchlist"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_watchlist"
+                android:background="@drawable/btn_icon_bg"
+                android:padding="8dp"
+                android:contentDescription="Do obejrzenia"/>
+
+            <ImageButton
+                android:id="@+id/btnWatched"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_watched"
+                android:background="@drawable/btn_icon_bg"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Obejrzane"/>
+
+            <ImageButton
+                android:id="@+id/btnFavourite"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_favourite"
+                android:background="@drawable/btn_icon_bg"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Ulubione"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
